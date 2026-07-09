@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shreya Rani — Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- progress spine -->
+<div class="spine" id="spine">
+  <div class="spine-line"></div>
+  <div class="spine-fill" id="spineFill"></div>
+  <div class="spine-tick" data-target="hero" style="top:2%"><span>start</span></div>
+  <div class="spine-tick" data-target="about" style="top:18%"><span>about</span></div>
+  <div class="spine-tick" data-target="stack" style="top:34%"><span>stack</span></div>
+  <div class="spine-tick" data-target="experience" style="top:50%"><span>experience</span></div>
+  <div class="spine-tick" data-target="projects" style="top:66%"><span>projects</span></div>
+  <div class="spine-tick" data-target="education" style="top:82%"><span>education</span></div>
+  <div class="spine-tick" data-target="contact" style="top:97%"><span>contact</span></div>
+</div>
+
+<header class="nav">
+  <a href="#hero" class="nav-mark">SR<span>.dev</span></a>
+  <nav class="nav-links">
+    <a href="#about">about</a>
+    <a href="#stack">stack</a>
+    <a href="#experience">experience</a>
+    <a href="#projects">projects</a>
+    <a href="#education">education</a>
+    <a href="#contact">contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">about</a>
+  <a href="#stack">stack</a>
+  <a href="#experience">experience</a>
+  <a href="#projects">projects</a>
+  <a href="#education">education</a>
+  <a href="#contact">contact</a>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <!-- <p class="eyebrow mono">// portfolio.init()</p> -->
+      <div class="compile-line mono" id="compileLine"></div>
+      <h1 class="hero-name">
+        <span class="line">Shreya</span>
+        <span class="line accent">Rani<span class="cursor-blink">_</span></span>
+      </h1>
+      <p class="hero-role">Web Developer — <span class="mono">2.5 years</span> turning briefs into shipped products, from WordPress builds to React applications.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      </div>
+    </div>
+    <div class="hero-scroll mono">scroll <span class="arrow">↓</span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <p class="section-tag mono">01 / about</p>
+    <h2 class="section-title">Half page-builder craft,<br>half hand-written code.</h2>
+    <div class="about-grid">
+      <p class="about-text">
+        I'm Shreya — a web developer who's spent the last two and a half years living on both sides of the build process: shaping fast, client-ready sites in WordPress, and writing the PHP, JavaScript and React underneath when off-the-shelf isn't enough.
+      </p>
+      <p class="about-text">
+        I like the kind of work where a deadline and a design file both have to survive contact with reality. Pixel-accurate when it matters, pragmatic when it doesn't — and always shipped.
+      </p>
+    </div>
+    <div class="about-stats">
+      <div class="stat">
+        <span class="stat-num mono">2.5</span>
+        <span class="stat-label">years building</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num mono">10+</span>
+        <span class="stat-label">tools mastered</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num mono">∞</span>
+        <span class="stat-label">cups of coffee</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="section" id="stack">
+    <p class="section-tag mono">02 / stack</p>
+    <h2 class="section-title">What I build with.</h2>
+
+    <div class="stack-groups">
+      <div class="stack-group" data-reveal>
+        <h3 class="stack-group-title">Languages &amp; Core</h3>
+        <ul class="stack-pills">
+          <li>Python</li><li>PHP</li><li>JavaScript</li><li>HTML</li><li>CSS</li>
+        </ul>
+      </div>
+      <div class="stack-group" data-reveal>
+        <h3 class="stack-group-title">Frameworks &amp; Libraries</h3>
+        <ul class="stack-pills">
+          <li>Django</li><li>React JS</li><li>Tailwind CSS</li><li>Bootstrap</li>
+        </ul>
+      </div>
+      <div class="stack-group" data-reveal>
+        <h3 class="stack-group-title">WordPress Ecosystem</h3>
+        <ul class="stack-pills">
+          <li>WordPress</li><li>Elementor</li><li>Divi</li><li>ACF Pro</li><li>CPT</li>
+        </ul>
+      </div>
+      <div class="stack-group" data-reveal>
+        <h3 class="stack-group-title">Data</h3>
+        <ul class="stack-pills">
+          <li>MySQL</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <p class="section-tag mono">03 / experience</p>
+    <h2 class="section-title">2.5 years, one continuous build.</h2>
+
+    <div class="timeline">
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <p class="timeline-date mono">2023 — Present</p>
+          <h3>Web Developer</h3>
+          <p>Building and maintaining client websites end to end — custom WordPress builds with Elementor, Divi and ACF Pro, alongside PHP/MySQL backends and React-driven front ends where the project calls for it.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <p class="timeline-date mono">Ongoing</p>
+          <h3>Expanding into Python &amp; Django</h3>
+          <p>Growing beyond the PHP/WordPress core into Python and Django for backend work, and deepening React skills for fully custom front-end builds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <p class="section-tag mono">04 / projects</p>
+    <h2 class="section-title">Selected work.</h2>
+
+    <div class="projects-grid">
+
+      <a href="https://dev.thepixelworkshop.com/" target="_blank">
+      <article class="project-card" data-reveal>
+        <div class="project-visual" data-pattern="1"></div>
+        <div class="project-body">
+          <p class="project-meta mono">The Pixel Workshop</p>
+          <h3>Business Website</h3>
+          <p>Custom WordPress builds for service businesses — Elementor, ACF Pro for flexible content blocks, and custom post types for case studies, team members and services.</p>
+          <ul class="project-tags">
+            <li>WordPress</li><li>Elementor Pro</li><li>ACF Pro</li><li>CPT</li><li>HTML</li>
+            <li>CSS</li>
+            <li>Shortcodes</li>
+          </ul>
+        </div>
+      </article>
+      </a>
+
+      <a href="https://staging.thattoppingdude.com/" target="_blank">
+      <article class="project-card" data-reveal>
+        <div class="project-visual" data-pattern="2"></div>
+        <div class="project-body">
+          <p class="project-meta mono">That Topping Dude</p>
+          <h3>Music Contest Website</h3>
+          <p>Converted Figma file into wordpress theme. Contest can upload video, download video, uploaded video will save in dropbox and admin database as well. User can vote to video which they like.</p>
+          <ul class="project-tags">
+            <li>PHP</li><li>WordPress(Elementor)</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Shortcodes</li><li>Acf Pro</li>
+          </ul>
+        </div>
+      </article>
+      </a>
+
+      <a href="https://devdaya.org.uk/devdaya_new/" target="_blank">
+      <article class="project-card" data-reveal>
+        <div class="project-visual" data-pattern="3"></div>
+        <div class="project-body">
+          <p class="project-meta mono">Devdaya Charitable Trust</p>
+          <h3>Charitable Trust</h3>
+          <p>A Charitable Trust Website build using octilka theme</p>
+          <ul class="project-tags">
+            <li>Wordpress</li><li>PHP</li><li>JavaScript</li>
+          </ul>
+        </div>
+      </article>
+      </a>
+
+      <a href="https://transit.indocamgroup.com/" target="_blank">
+      <article class="project-card" data-reveal>
+        <div class="project-visual" data-pattern="4"></div>
+        <div class="project-body">
+          <p class="project-meta mono">Indocam Group</p>
+          <h3>Indocam Group</h3>
+          <p>A set of fast-loading, responsive pages — semantic HTML, Bootstrap grid for rapid layout, and hand-tuned CSS animation for hero and call-to-action sections.</p>
+          <ul class="project-tags">
+            <li>Bootstrap</li><li>HTML</li><li>CSS</li>
+          </ul>
+        </div>
+      </article>
+      </a>
+
+      <a href="https://sarl.indocamgroup.com/" target="_blank">
+        <article class="project-card" data-reveal>
+          <!-- <div class="project-visual" data-pattern="5"></div> -->
+          <div class="project-body">
+            <!-- <p class="project-meta mono">Sarl Indocam Group</p> -->
+            <h3>Sarl Indocam Group</h3>
+            <p>Converted Figma to wordpress.</p>
+            <ul class="project-tags">
+              <li>Wordpress(Divi)</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </article>
+      </a>
+
+      <a href="https://belirise.com/" target="_blank">
+        <article class="project-card" data-reveal>
+          <!-- <div class="project-visual" data-pattern="5"></div> -->
+          <div class="project-body">
+            <!-- <p class="project-meta mono">Sarl Indocam Group</p> -->
+            <h3>Belirise</h3>
+            <p>IT Company Website.</p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>javascript</li>
+            </ul>
+          </div>
+        </article>
+      </a>
+
+      <a href="https://quiz-iota-pink.vercel.app/" target="_blank">
+        <article class="project-card" data-reveal>
+          <!-- <div class="project-visual" data-pattern="5"></div> -->
+          <div class="project-body">
+            <!-- <p class="project-meta mono">Sarl Indocam Group</p> -->
+            <h3>Quiz Website</h3>
+            <p>Quiz Website build in React js and Tailwind css</p>
+            <ul class="project-tags">
+              <li>React js</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+        </article>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <p class="section-tag mono">05 / education</p>
+    <h2 class="section-title">Where it started.</h2>
+
+    <div class="edu-list">
+      <div class="edu-item" data-reveal>
+        <div class="edu-year mono">2018 — 2022</div>
+        <div class="edu-body">
+          <h3>Master's of Computer Application</h3>
+          <p>A. N College, Patna</p>
+          <p>Obtained Marks: 76%</p>
+        </div>
+      </div>
+      <div class="edu-item" data-reveal>
+        <div class="edu-year mono">2015 - 2018</div>
+        <div class="edu-body">
+          <h3>Bachelore's of Computer Application</h3>
+          <p>M.D College, Patna</p>
+          <p>Obtained Marks: 62.8%</p>
+        </div>
+      </div>
+      <div class="edu-item" data-reveal>
+        <div class="edu-year mono">2013 - 2015</div>
+        <div class="edu-body">
+          <h3>Intermediate</h3>
+          <p>M.D College, Patna</p>
+          <p>Obtained Marks: 70%</p>
+        </div>
+      </div>
+
+      <div class="edu-item" data-reveal>
+        <div class="edu-year mono">2013</div>
+        <div class="edu-body">
+          <h3>10th</h3>
+          <p>BSEB</p>
+          <p>Obtained Marks: 76%</p>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- </div>
+    </div> -->
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <p class="section-tag mono">06 / contact</p>
+    <h2 class="section-title">Let's build something.</h2>
+    <p class="contact-text">Open to freelance projects, contract work and full-time roles. The fastest way to reach me is below.</p>
+    <a href="mailto:shreya.n.kumari@gmail.com" class="contact-email">shreya.n.kumari@gmail.com</a>
+    <div class="contact-links">
+      <a href="https://github.com/shreya-n-kumari" class="contact-link" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/shreya-rani-775a921aa/" class="contact-link" target="_blank">LinkedIn</a>
+      <a href="https://www.hackerrank.com/profile/shreya_n_kumari" target="_blank" class="contact-link">Hackerrank</a>
+      <a href="#" class="contact-link">Resume ↓</a>      
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="mono">© 2026 Shreya Rani — built with HTML, CSS &amp; JS</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
