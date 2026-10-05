@@ -334,12 +334,29 @@ main{ position: relative; z-index: 2; }
 /* =========================================================
    PROJECTS
    ========================================================= */
-.projects-grid{
-  display:grid; grid-template-columns: repeat(2, 1fr); gap: 1.8rem;
+.projects-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom:30px;
+  gap: 30px;
 }
-.project-card{
+.select-button{
+  padding: 15px 32px;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--accent) !important;
+  /* border-color : var(--accent); */
+}
+ .projects-grid{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem;
+}
+.project-card, .select-button{
   background: var(--ink-2); border: 1px solid var(--line); border-radius: 18px;
-  overflow: hidden; transition: transform 0.35s ease, border-color 0.35s;
+  /* overflow: hidden; */
+  transition: transform 0.35s ease, border-color 0.35s;
 }
 .project-card:hover{ transform: translateY(-6px); border-color: var(--accent); }
 
@@ -387,6 +404,13 @@ main{ position: relative; z-index: 2; }
 
 @media (max-width: 760px){
   .projects-grid{ grid-template-columns: 1fr; }
+
+.projects-buttons{
+  gap: 20px;
+}
+.select-button{
+  padding: 10px 13px;
+}
 }
 
 /* =========================================================

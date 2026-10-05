@@ -127,3 +127,24 @@ if (!prefersReducedMotion && !isTouch){
     glowVisible = false;
   });
 }
+
+// Toggle between projects using buttons
+
+const reactButton = document.getElementById('react');
+const wordpressButton = document.getElementById('wordpress');
+const wordpressProjects = document.getElementById('wordpress-project');
+const reactProjects = document.getElementById('react-project');
+
+reactProjects.style.display = 'none';
+
+reactButton.addEventListener('click', function () {
+    wordpressProjects.style.display = 'none';
+    reactProjects.style.display = 'grid';
+});
+
+wordpressButton.addEventListener('click', function(){
+  wordpressProjects.style.display = 'grid';
+  reactProjects.style.display = 'none';
+})
+
+

@@ -160,9 +160,14 @@
   <!-- PROJECTS -->
   <section class="section" id="projects">
     <p class="section-tag mono">04 / projects</p>
-    <h2 class="section-title">Selected work.</h2>
+    <!-- <h2 class="section-title">Selected work.</h2> -->
+    <div class="projects-buttons">
+      <button class="select-button" id="wordpress">Wordpress</button>
+      <button class="select-button" id="react">React Js</button>
+      <button class="select-button" id="python">Python</button>
+    </div>
 
-    <div class="projects-grid">
+    <div class="projects-grid" id="wordpress-project">
 
       <a href="https://thepixelworkshop.com/" target="_blank">
       <article class="project-card" data-reveal>
@@ -267,14 +272,16 @@
           </div>
         </article>
       </a>
+      </div>
 
-      <a href="https://quiz-iota-pink.vercel.app/" target="_blank">
+      <div class="projects-grid" id="react-project">
+        <a href="https://quiz-iota-pink.vercel.app/" target="_blank">
         <article class="project-card" data-reveal>
           <!-- <div class="project-visual" data-pattern="5"></div> -->
           <div class="project-body">
             <!-- <p class="project-meta mono">Sarl Indocam Group</p> -->
             <h3>Quiz Website</h3>
-            <p>Quiz Website build in React js and Tailwind css</p>
+            <p>Anyone can play a quiz based of your choice topic.</p>
             <ul class="project-tags">
               <li>React js</li>
               <li>Tailwind CSS</li>
@@ -283,7 +290,38 @@
         </article>
       </a>
 
-    </div>
+      <a href="https://www.quickhotels.co/" target="_blank">
+        <article class="project-card" data-reveal>
+          <!-- <div class="project-visual" data-pattern="5"></div> -->
+          <div class="project-body">
+            <!-- <p class="project-meta mono">Sarl Indocam Group</p> -->
+            <h3>Quick Hotels</h3>
+            <p>Hotel booking website buid in reactjs.</p>
+            <ul class="project-tags">
+              <li>React js</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+        </article>
+      </a>
+
+      <a href="https://fetch-google-sheet.vercel.app/" target="_blank">
+        <article class="project-card" data-reveal>
+          <!-- <div class="project-visual" data-pattern="5"></div> -->
+          <div class="project-body">
+            <!-- <p class="project-meta mono">Sarl Indocam Group</p> -->
+            <h3>Fetch Google Sheet Data</h3>
+            <p>In this Project you can add data to the google sheet and see in the list newly added data. In this Project used the API integration.</p>
+            <ul class="project-tags">
+              <li>React js</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+        </article>
+      </a>
+      </div>
+
+    
   </section>
 
   <!-- EDUCATION -->
