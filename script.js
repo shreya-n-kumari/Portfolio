@@ -134,16 +134,26 @@ const reactButton = document.getElementById('react');
 const wordpressButton = document.getElementById('wordpress');
 const wordpressProjects = document.getElementById('wordpress-project');
 const reactProjects = document.getElementById('react-project');
+const pythonProjects = document.getElementById('python-project');
+const pythonButton = document.getElementById('python');
 
 reactProjects.style.display = 'none';
 
 reactButton.addEventListener('click', function () {
     wordpressProjects.style.display = 'none';
+    pythonProjects.style.display = 'none';
     reactProjects.style.display = 'grid';
 });
 
 wordpressButton.addEventListener('click', function(){
   wordpressProjects.style.display = 'grid';
+  reactProjects.style.display = 'none';
+  pythonProjects.style.display = 'none';
+})
+
+pythonButton.addEventListener('click', function(){
+  pythonProjects.style.display = 'grid';
+  wordpressProjects.style.display = 'none';
   reactProjects.style.display = 'none';
 })
 

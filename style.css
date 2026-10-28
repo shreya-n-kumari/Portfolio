@@ -360,15 +360,15 @@ main{ position: relative; z-index: 2; }
 }
 .project-card:hover{ transform: translateY(-6px); border-color: var(--accent); }
 
-.project-visual{
+/* .project-visual{
   height: 150px; position: relative; overflow:hidden;
   background: linear-gradient(135deg, var(--ink-2), var(--ink));
-}
-.project-visual::before{
+} */
+/* .project-visual::before{
   content:""; position:absolute; inset:0;
   background-size: 22px 22px;
   opacity: 0.5;
-}
+} */
 .project-visual[data-pattern="1"]::before{
   background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
 }
