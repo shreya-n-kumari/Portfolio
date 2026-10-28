@@ -138,6 +138,7 @@ const pythonProjects = document.getElementById('python-project');
 const pythonButton = document.getElementById('python');
 
 reactProjects.style.display = 'none';
+pythonProjects.style.display = 'none';
 
 reactButton.addEventListener('click', function () {
     wordpressProjects.style.display = 'none';
